@@ -4,16 +4,20 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Networking;
 
+//public class ObjAlgrebraic_Y_Manipulate : NetworkBehaviour { 
 public class ObjAlgrebraic_Y_Manipulate : MonoBehaviour {
     public LayerMask AlgebraScaleManipulateLay;
     [SerializeField] Camera PlyCam;
-    [SerializeField] InputField AlgebraInput;
-    [SerializeField] GameObject TrgtedObjToManipulate;
+    [SerializeField]private GameObject AlgebraInputPopout;
+    [SerializeField]private InputField AlgebraInput;
+    [SerializeField]protected GameObject TrgtedObjToManipulate;
     [SerializeField] bool IsInputNo;
-
+    private static bool IsAlgebraInputOut = false;
+    public float PlyrMaxCastTimeWCurrentObj;
 	void Start () {
         PlyCam =GetComponent<Camera>();
         MagicPsysComphendLogic MagicProcessSrcptOnPly= GetComponent<MagicPsysComphendLogic>();
+
 	}
 	
 	void Update () {
@@ -23,9 +27,9 @@ public class ObjAlgrebraic_Y_Manipulate : MonoBehaviour {
             RaycastHit HitRay;
             if (Physics.Raycast(TrgtObjRay,out HitRay,50f,AlgebraScaleManipulateLay)){
                 TrgtedObjToManipulate=HitRay.transform.gameObject;
-                //pop out input field
+                ForceEnableAlgebraInput();
                 //chck AlgebraInput.text is Input a no? if not execute NotaNoInInput,func.
-                if(IsInputNo=true){
+                if(IsInputNo==true){
                     //execute It with 
                   //  MagicPsysComphendLogic
 
@@ -34,7 +38,7 @@ public class ObjAlgrebraic_Y_Manipulate : MonoBehaviour {
 
 
                 }
-
+                Invoke("ForceSisabledAlgebraInput",PlyrMaxCastTimeWCurrentObj);
             }
 
 
@@ -42,6 +46,15 @@ public class ObjAlgrebraic_Y_Manipulate : MonoBehaviour {
 	}
     void NotaNo() {
 
+    }
+
+    private void ForceEnableAlgebraInput()
+    {   AlgebraInputPopout.SetActive(true);
+        AlgebraInput.Select();
+    }
+
+    private void ForceDisabledAlgebraInput()
+    { AlgebraInputPopout.SetActive(false);
     }
 
 }

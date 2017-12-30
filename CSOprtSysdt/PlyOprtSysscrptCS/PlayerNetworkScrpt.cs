@@ -46,11 +46,9 @@ public class PlayerNetworkScrpt : NetworkBehaviour
 
     void Update()
     {
-        if (!isLocalPlayer){
-            return;
-        
-       
-        if(isLocalPlayer){   
+        if (!isLocalPlayer)
+        { return;}
+        else { 
         Move();
         //Advance Mov Bool Sys
         if(Input.GetKey(KeyCode.Tab)){Anim.animator.SetBool("Jog",true);}else{Anim.animator.SetBool("Jog",false);}
@@ -58,8 +56,9 @@ public class PlayerNetworkScrpt : NetworkBehaviour
         if(Input.GetKeyDown(KeyCode.R)){Anim.animator.SetBool("GetInputR",true);}else{Anim.animator.SetBool("GetInputR",false);}
 
         StandupFromStomachonFloor();
-            }  }
+            }
     }
+    
 
     void Move(){
         Anim.animator.SetFloat("VerticalWalking_z",Input.GetAxis("Vertical"));
