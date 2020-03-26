@@ -24,7 +24,8 @@ Ply Input:cos60,comp need to resolve,into value)=output : Coefficient(1)Value by
 As our we learn this universe law, we need to experience in that universe/alike.but with boost mode on.
 #Magic
 
-7)The final project doesn't limit a universe.In fact any theory that could be defined could be added to this game.
+7)The final project doesn't limit to ONLY a universe.
+IN fact any theory that could be defined could be added to this game.
 even accounting&financial theories
 
 If I were to say money is the basis of value that could be used between parties both agrees to
