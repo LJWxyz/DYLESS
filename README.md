@@ -26,10 +26,14 @@ As our we learn this universe law, we need to experience in that universe/alike.
 
 7)The final project doesn't limit a universe.In fact any theory that could be defined could be added to this game.
 even accounting&financial theories
+
 If I were to say money is the basis of value that could be used between parties both agrees to
-Then:if.monster x need $,monster y accept:$ and* . One will think hard which to use and conversion of value.
-Then:if.monster can be summoned with accurred value.then players will take accrued into account.
-Thus.easily find out why bookkeeping works the way it is.As a given guidance and not simply follow blindly.
+Then:if.monster x need $,monster y accept:$ and* . 
+One will think hard which to use and conversion of value.
+Then:if.monster can be summoned with accurred value.
+then players will take accrued into account.
+Thus.easily find out why bookkeeping works the way it is.
+As a given guidance by those invent the system and not simply follow blindly.
 
 #project died anyone interested may pm me:0141513@sttss.edu.my
 If and only if someone has resource or the will to make learning itself just like a game itself.
